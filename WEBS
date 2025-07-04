@@ -54,10 +54,10 @@
         <div id="links-section" class="link-container">
             <!-- Enlaces simulados (100 en total) -->
             <div class="link-card">
-                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
-                    Google
+                <a href="SR.html" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    REVISION SISTEMATICA
                 </a>
-                <p>El motor de búsqueda más popular del mundo.</p>
+                <p>APRENDE A CREAR REVISIONES.</p>
             </div>
             <div class="link-card">
                 <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
