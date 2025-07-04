@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Enlaces</title>
+    <!-- Carga de Tailwind CSS para estilos rápidos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados para la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos para el contenedor de enlaces */
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; /* Espacio entre los enlaces */
+        }
+        /* Estilos para cada tarjeta de enlace */
+        .link-card {
+            background-color: #f0f9ff; /* Azul claro */
+            padding: 1.5rem;
+            border-radius: 0.75rem; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            transition: transform 0.2s ease-in-out; /* Transición suave al pasar el ratón */
+        }
+        .link-card:hover {
+            transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+        }
+        .link-card a {
+            color: #1d4ed8; /* Azul más oscuro para los enlaces */
+            font-weight: 600; /* Negrita */
+            text-decoration: none; /* Sin subrayado por defecto */
+        }
+        .link-card a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+        .link-card p {
+            color: #4b5563; /* Gris oscuro para la descripción */
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center py-10 px-4">
+    <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-2xl w-full text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Mis Enlaces Favoritos</h1>
+        <p class="text-lg text-gray-600 mb-8">
+            Aquí puedes encontrar una colección de enlaces útiles y favoritos.
+            ¡Puedes editar este código para agregar los tuyos!
+        </p>
+
+        <div id="links-section" class="link-container">
+            <!-- Enlaces simulados (100 en total) -->
+            <div class="link-card">
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Google
+                </a>
+                <p>El motor de búsqueda más popular del mundo.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    YouTube
+                </a>
+                <p>Plataforma para ver y compartir videos.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    GitHub
+                </a>
+                <p>Plataforma de desarrollo colaborativo para alojar y revisar código.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-1.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 1
+                </a>
+                <p>Descripción para el enlace simulado 1.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-2.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 2
+                </a>
+                <p>Descripción para el enlace simulado 2.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-3.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 3
+                </a>
+                <p>Descripción para el enlace simulado 3.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-4.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 4
+                </a>
+                <p>Descripción para el enlace simulado 4.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-5.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 5
+                </a>
+                <p>Descripción para el enlace simulado 5.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-6.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 6
+                </a>
+                <p>Descripción para el enlace simulado 6.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-7.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 7
+                </a>
+                <p>Descripción para el enlace simulado 7.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-8.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 8
+                </a>
+                <p>Descripción para el enlace simulado 8.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-9.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 9
+                </a>
+                <p>Descripción para el enlace simulado 9.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-10.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 10
+                </a>
+                <p>Descripción para el enlace simulado 10.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-11.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 11
+                </a>
+                <p>Descripción para el enlace simulado 11.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-12.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 12
+                </a>
+                <p>Descripción para el enlace simulado 12.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-13.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 13
+                </a>
+                <p>Descripción para el enlace simulado 13.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-14.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 14
+                </a>
+                <p>Descripción para el enlace simulado 14.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-15.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 15
+                </a>
+                <p>Descripción para el enlace simulado 15.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-16.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 16
+                </a>
+                <p>Descripción para el enlace simulado 16.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-17.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 17
+                </a>
+                <p>Descripción para el enlace simulado 17.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-18.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 18
+                </a>
+                <p>Descripción para el enlace simulado 18.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-19.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 19
+                </a>
+                <p>Descripción para el enlace simulado 19.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-20.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 20
+                </a>
+                <p>Descripción para el enlace simulado 20.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-21.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 21
+                </a>
+                <p>Descripción para el enlace simulado 21.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-22.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 22
+                </a>
+                <p>Descripción para el enlace simulado 22.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-23.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 23
+                </a>
+                <p>Descripción para el enlace simulado 23.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-24.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 24
+                </a>
+                <p>Descripción para el enlace simulado 24.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-25.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 25
+                </a>
+                <p>Descripción para el enlace simulado 25.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-26.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 26
+                </a>
+                <p>Descripción para el enlace simulado 26.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-27.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 27
+                </a>
+                <p>Descripción para el enlace simulado 27.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-28.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 28
+                </a>
+                <p>Descripción para el enlace simulado 28.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-29.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 29
+                </a>
+                <p>Descripción para el enlace simulado 29.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-30.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 30
+                </a>
+                <p>Descripción para el enlace simulado 30.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-31.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 31
+                </a>
+                <p>Descripción para el enlace simulado 31.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-32.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 32
+                </a>
+                <p>Descripción para el enlace simulado 32.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-33.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 33
+                </a>
+                <p>Descripción para el enlace simulado 33.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-34.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 34
+                </a>
+                <p>Descripción para el enlace simulado 34.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-35.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 35
+                </a>
+                <p>Descripción para el enlace simulado 35.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-36.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 36
+                </a>
+                <p>Descripción para el enlace simulado 36.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-37.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 37
+                </a>
+                <p>Descripción para el enlace simulado 37.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-38.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 38
+                </a>
+                <p>Descripción para el enlace simulado 38.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-39.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 39
+                </a>
+                <p>Descripción para el enlace simulado 39.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-40.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 40
+                </a>
+                <p>Descripción para el enlace simulado 40.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-41.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 41
+                </a>
+                <p>Descripción para el enlace simulado 41.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-42.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 42
+                </a>
+                <p>Descripción para el enlace simulado 42.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-43.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 43
+                </a>
+                <p>Descripción para el enlace simulado 43.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-44.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 44
+                </a>
+                <p>Descripción para el enlace simulado 44.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-45.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 45
+                </a>
+                <p>Descripción para el enlace simulado 45.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-46.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 46
+                </a>
+                <p>Descripción para el enlace simulado 46.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-47.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 47
+                </a>
+                <p>Descripción para el enlace simulado 47.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-48.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 48
+                </a>
+                <p>Descripción para el enlace simulado 48.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-49.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 49
+                </a>
+                <p>Descripción para el enlace simulado 49.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-50.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 50
+                </a>
+                <p>Descripción para el enlace simulado 50.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-51.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 51
+                </a>
+                <p>Descripción para el enlace simulado 51.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-52.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 52
+                </a>
+                <p>Descripción para el enlace simulado 52.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-53.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 53
+                </a>
+                <p>Descripción para el enlace simulado 53.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-54.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 54
+                </a>
+                <p>Descripción para el enlace simulado 54.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-55.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 55
+                </a>
+                <p>Descripción para el enlace simulado 55.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-56.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 56
+                </a>
+                <p>Descripción para el enlace simulado 56.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-57.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 57
+                </a>
+                <p>Descripción para el enlace simulado 57.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-58.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 58
+                </a>
+                <p>Descripción para el enlace simulado 58.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-59.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 59
+                </a>
+                <p>Descripción para el enlace simulado 59.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-60.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 60
+                </a>
+                <p>Descripción para el enlace simulado 60.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-61.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 61
+                </a>
+                <p>Descripción para el enlace simulado 61.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-62.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 62
+                </a>
+                <p>Descripción para el enlace simulado 62.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-63.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 63
+                </a>
+                <p>Descripción para el enlace simulado 63.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-64.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 64
+                </a>
+                <p>Descripción para el enlace simulado 64.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-65.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 65
+                </a>
+                <p>Descripción para el enlace simulado 65.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-66.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 66
+                </a>
+                <p>Descripción para el enlace simulado 66.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-67.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 67
+                </a>
+                <p>Descripción para el enlace simulado 67.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-68.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 68
+                </a>
+                <p>Descripción para el enlace simulado 68.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-69.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 69
+                </a>
+                <p>Descripción para el enlace simulado 69.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-70.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 70
+                </a>
+                <p>Descripción para el enlace simulado 70.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-71.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 71
+                </a>
+                <p>Descripción para el enlace simulado 71.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-72.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 72
+                </a>
+                <p>Descripción para el enlace simulado 72.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-73.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 73
+                </a>
+                <p>Descripción para el enlace simulado 73.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-74.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 74
+                </a>
+                <p>Descripción para el enlace simulado 74.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-75.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 75
+                </a>
+                <p>Descripción para el enlace simulado 75.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-76.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 76
+                </a>
+                <p>Descripción para el enlace simulado 76.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-77.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 77
+                </a>
+                <p>Descripción para el enlace simulado 77.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-78.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 78
+                </a>
+                <p>Descripción para el enlace simulado 78.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-79.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 79
+                </a>
+                <p>Descripción para el enlace simulado 79.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-80.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 80
+                </a>
+                <p>Descripción para el enlace simulado 80.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-81.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 81
+                </a>
+                <p>Descripción para el enlace simulado 81.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-82.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 82
+                </a>
+                <p>Descripción para el enlace simulado 82.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-83.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 83
+                </a>
+                <p>Descripción para el enlace simulado 83.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-84.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 84
+                </a>
+                <p>Descripción para el enlace simulado 84.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-85.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 85
+                </a>
+                <p>Descripción para el enlace simulado 85.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-86.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 86
+                </a>
+                <p>Descripción para el enlace simulado 86.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-87.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 87
+                </a>
+                <p>Descripción para el enlace simulado 87.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-88.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 88
+                </a>
+                <p>Descripción para el enlace simulado 88.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-89.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 89
+                </a>
+                <p>Descripción para el enlace simulado 89.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-90.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 90
+                </a>
+                <p>Descripción para el enlace simulado 90.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-91.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 91
+                </a>
+                <p>Descripción para el enlace simulado 91.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-92.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 92
+                </a>
+                <p>Descripción para el enlace simulado 92.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-93.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 93
+                </a>
+                <p>Descripción para el enlace simulado 93.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-94.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 94
+                </a>
+                <p>Descripción para el enlace simulado 94.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-95.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 95
+                </a>
+                <p>Descripción para el enlace simulado 95.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-96.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 96
+                </a>
+                <p>Descripción para el enlace simulado 96.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-97.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 97
+                </a>
+                <p>Descripción para el enlace simulado 97.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-98.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 98
+                </a>
+                <p>Descripción para el enlace simulado 98.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-99.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 99
+                </a>
+                <p>Descripción para el enlace simulado 99.</p>
+            </div>
+            <div class="link-card">
+                <a href="https://www.simulado-enlace-100.com" target="_blank" rel="noopener noreferrer" class="block text-2xl">
+                    Enlace Simulado 100
+                </a>
+                <p>Descripción para el enlace simulado 100.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
